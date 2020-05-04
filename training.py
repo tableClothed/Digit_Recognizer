@@ -6,7 +6,7 @@ mnist = tf.keras.datasets.mnist
 
 (x_train, y_train), (a, b) = mnist.load_data()
 
-# x_train = x_train/255.0
+x_train = x_train/255.0
 # x_train = tf.keras.utils.normalize(x_train, axis=1)
 
 model = tf.keras.models.Sequential()
